@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        .card {
+            font-family: Arial, sans-serif;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 500px;
+            margin: auto;
+            background-color: #f9f9f9;
+        }
+        .header { color: #2c3e50; border-bottom: 3px solid red; }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2 class="header">¡Tarea Creada!</h2>
+        <p>Hola <strong th:text="${nombre}">Usuario</strong>,</p>
+        <p>Creaste tu tarea exitosamente.</p>
+        <p><strong>Estado:</strong> <span style="color: green;">finalizada</span></p>
+        <a href="#" class="button">Ir a la vista</a>
+    </div>
+</body>
+</html>
