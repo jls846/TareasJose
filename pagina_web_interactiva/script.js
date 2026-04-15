@@ -1,9 +1,8 @@
-// Esperar a que el DOM esté cargado
 document.addEventListener('DOMContentLoaded', () => {
     
     const btnSaludo = document.getElementById('btn-saludo');
     btnSaludo.addEventListener('click', () => {
-        alert('¡Hola! Bienvenido a mi proyecto de evaluación web.');
+        alert('hola tarea 6 .');
     });
 
 
